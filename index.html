@@ -1,15 +1,43 @@
-
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Patagonian School - A1 Digital Challenge</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#fbf8f3">
+<title>A1 Digital Challenge | Patagonian School</title>
+<style>
+:root{--bg:#fbf8f3;--paper:#fff;--ink:#423c36;--muted:#736c64;--copper:#aa8066;--sage:#e9f1e8;--butter:#faf2d7;--blue:#07527b;--bluehover:#063d5c;--line:#e6ded4}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font-family:'Trebuchet MS',Arial,sans-serif;line-height:1.55}
+.container{max-width:1050px;margin:auto;padding:24px 24px 50px}.top{display:flex;justify-content:space-between;align-items:center;gap:18px;padding:8px 0 18px}.top small{font-weight:700;letter-spacing:.1em;color:var(--copper)}
+.logo{display:block;width:min(350px,80%);height:auto;margin:0 auto 10px}.hero{background:var(--paper);border:1px solid var(--line);border-radius:28px;text-align:center;padding:28px 22px 35px;box-shadow:0 12px 38px #6d55450b;position:relative;overflow:hidden}.hero:before{content:'';position:absolute;width:150px;height:150px;background:var(--sage);border-radius:50%;top:-90px;left:-70px}.hero:after{content:'';position:absolute;width:150px;height:150px;background:var(--butter);border-radius:50%;bottom:-105px;right:-55px}.hero>*{position:relative;z-index:1}
+h1{font-size:clamp(32px,5vw,52px);line-height:1.13;margin:5px 0 15px;letter-spacing:-.03em}h2{font-size:clamp(23px,3vw,30px);margin:0}.motto{font-size:19px;font-weight:700;margin:0}.translation{color:var(--muted);margin:0 0 20px}.hero-intro{margin:0 auto;max-width:590px;font-size:17px}.eyebrow{font-size:12px;font-weight:800;letter-spacing:.15em;color:var(--copper);text-transform:uppercase;margin:0 0 6px}
+.section-heading{margin:36px 0 18px;display:flex;align-items:end;justify-content:space-between;gap:12px}.section-heading p{margin:4px 0 0;color:var(--muted)}.cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}.card{background:var(--paper);border:1px solid var(--line);border-radius:20px;padding:23px;display:flex;flex-direction:column;min-height:235px}.card:nth-child(2),.card:nth-child(5){background:#fcfdfb}.card:nth-child(3){background:#fffef9}.icon{font-size:30px;line-height:1.2}.card-head{display:flex;align-items:center;justify-content:space-between}.number{font-size:13px;color:var(--copper);font-weight:800}.card h3{font-size:22px;line-height:1.25;margin:15px 0 5px}.card p{margin:0 0 20px;color:var(--muted);font-size:14px}.card .bottom{margin-top:auto}.button{display:inline-block;border:0;border-radius:11px;padding:12px 18px;background:var(--blue);color:#fff;text-decoration:none;font-weight:800;text-align:center;min-width:145px;cursor:pointer}.button:hover{background:var(--bluehover)}.button:focus-visible{outline:3px solid #e1aa36;outline-offset:3px}.soon{font-size:13px;color:#786f65;font-weight:700;display:inline-block;padding:10px 0}.tip{background:var(--sage);border-radius:18px;padding:18px 22px;margin-top:25px;display:flex;align-items:start;gap:14px}.tip p{margin:0}.tip strong{display:block;margin-bottom:3px}.footer{margin-top:32px;border-top:1px solid var(--line);padding-top:18px;display:flex;justify-content:space-between;gap:12px;color:var(--muted);font-size:13px}
+@media(max-width:800px){.cards{grid-template-columns:repeat(2,minmax(0,1fr))}}@media(max-width:560px){.container{padding:12px 12px 35px}.hero{padding:26px 16px}.cards{grid-template-columns:1fr}.card{min-height:190px}.section-heading{display:block}.footer{display:block}.top{padding:6px 6px 14px}}
+</style>
 </head>
 <body>
-  <h1>Welcome to Patagonian School!</h1>
-  <h2>A1 Digital Challenge</h2>
-  <p>Learn, practise and get confident!</p>
-  <p>Our activities are coming soon.</p>
+<main class="container">
+ <div class="top"><small>ENGLISH PRACTICE</small><small>A1 ACCESS · KIDS</small></div>
+ <header class="hero">
+  <img class="logo" src="logo-patagonian.png" alt="Patagonian School logo: mountains and condor">
+  <p class="eyebrow">Welcome to your practice space</p>
+  <h1>A1 Digital Challenge</h1>
+  <p class="motto">We learn from all sides.</p>
+  <p class="translation" lang="es">Aprendemos con todos los sentidos.</p>
+  <p class="hero-intro">Practise English, learn to use your computer and feel more confident with every challenge.</p>
+ </header>
+ <section aria-labelledby="choose-title">
+  <div class="section-heading"><div><p class="eyebrow">Five challenges · Your own pace</p><h2 id="choose-title">Choose your challenge!</h2><p>Start with Match it! and explore more activities soon.</p></div></div>
+  <div class="cards">
+   <article class="card"><div class="card-head"><span class="icon" aria-hidden="true">🖱️</span><span class="number">01</span></div><h3>Match it!</h3><p>Drag and drop · Questions and answers</p><div class="bottom"><a class="button" href="match-it.html">Let's play!</a></div></article>
+   <article class="card"><div class="card-head"><span class="icon" aria-hidden="true">⌨️</span><span class="number">02</span></div><h3>Missing Letters</h3><p>Type and spell · Keyboard practice</p><div class="bottom"><span class="soon">Coming soon</span></div></article>
+   <article class="card"><div class="card-head"><span class="icon" aria-hidden="true">📖</span><span class="number">03</span></div><h3>Complete the Story</h3><p>Read and complete · Words in context</p><div class="bottom"><span class="soon">Coming soon</span></div></article>
+   <article class="card"><div class="card-head"><span class="icon" aria-hidden="true">🔎</span><span class="number">04</span></div><h3>Reading Detective</h3><p>Read and choose · True or false</p><div class="bottom"><span class="soon">Coming soon</span></div></article>
+   <article class="card"><div class="card-head"><span class="icon" aria-hidden="true">✏️</span><span class="number">05</span></div><h3>About Me!</h3><p>Write about yourself · Personal questions</p><div class="bottom"><span class="soon">Coming soon</span></div></article>
+  </div>
+ </section>
+ <aside class="tip"><span class="icon" aria-hidden="true">🌱</span><p><strong>Take your time!</strong> Read the instructions, check your answers and remember: practice helps you improve.</p></aside>
+ <footer class="footer"><span>Patagonian School · A1 Digital Challenge</span><span>Practice activities · Not an official Path examination</span></footer>
+</main>
 </body>
 </html>
